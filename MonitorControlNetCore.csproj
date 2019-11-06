@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>MonitorControl</RootNamespace>
+    <AssemblyName>MonitorControl</AssemblyName>
+    <StartupObject>MonitorControl.App</StartupObject>
+    <PackageId>com.ricardotejo.monitor-control</PackageId>
+    <Authors>Ricardo Tejo</Authors>
+    <Company>Ricardo Tejo</Company>
+    <Product>Monitor Control</Product>
+    <Description>Brightness and power control for multiple physical monitors</Description>
+    <Copyright>©2019 Ricardo Tejo</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <SignAssembly>false</SignAssembly>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MonitorApi.cs" />
+  </ItemGroup>
+
+</Project>
